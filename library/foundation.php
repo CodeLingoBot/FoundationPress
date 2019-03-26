@@ -74,7 +74,7 @@ if ( ! function_exists( 'foundationpress_get_the_comments_pagination' ) ) :
 					$navigation .= '<li class="page-item">' . str_replace( 'prev page-numbers', 'page-link', $link ) . '</li>';
 				} elseif ( $link_count - 1 == $index && 0 === strpos( $link, '<a class="next' ) ) {
 					$navigation .= '<li class="page-item">' . str_replace( 'next page-numbers', 'page-link', $link ) . '</li>';
-				} else {
+				} else{
 					$link = preg_replace( "/(class|href)='(.*)'/U", '$1="$2"', $link );
 					if ( 0 === strpos( $link, '<span class="page-numbers current' ) ) {
 						$navigation .= '<li class="page-item active">' . str_replace( array( '<span class="page-numbers current">', '</span>' ), array( '<a class="page-link" href="#">', '</a>' ), $link ) . '</li>';

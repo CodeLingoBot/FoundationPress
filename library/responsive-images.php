@@ -48,7 +48,7 @@ function foundationpress_adjust_image_sizes_attr( $sizes, $size ) {
 		} else {
 			$sizes = '(max-width: 1199px) 98vw, ' . $width . 'px';
 		}
-	} else { // Default 3/4 column post/page layout
+	} else{ // Default 3/4 column post/page layout
 		if ( 770 < $width ) {
 			$sizes = '(max-width: 639px) 98vw, (max-width: 1199px) 64vw, 770px';
 		} else {
